@@ -1,0 +1,115 @@
+.form {
+  padding: 20px;
+  color: var(--text-light-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  border-radius: 10px;
+  border: thin solid #7b9b74;
+  width: 30rem;
+}
+
+.form h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: thin solid #000;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .grid-section {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 90%;
+  border: thin solid var(--second-color);
+} */
+
+input[type="text"],
+input[type="password"],
+input[type="search"] {
+  width: 18rem;
+  height: 1.5rem;
+  margin-bottom: 8px;
+}
+
+input[readonly] {
+  background-color: transparent;
+  color: var(--text-light-color);
+}
+
+/* select {
+  width: max-content;
+}
+ */
+/* .enterprice-logo {
+  width: 10rem;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border: var(--border1);
+} */
+
+/* .eslogan {
+  font-family: var(--font);
+  background-color: transparent;
+  border: var(--border1);
+  color: var(--text-light-color);
+  padding: 1rem;
+} */
+
+.button-group {
+  grid-column-start: 2;
+  /* margin: 20px 50px 0px 20px; */
+  padding: 10px;
+  border-radius: 8px;
+  border: thin solid var(--first-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+.primary-button {
+  background-color: var(--secondbackground-color);
+  color: var(--text-dark-color);
+  font-size: large;
+  padding: 5px 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.75); /* Añadir sombra  */
+  transition: all 0.2s ease-in-out;
+}
+
+.short-button {
+  width: 10rem;
+  margin: 5px 0px;
+}
+
+/* input[type="checkbox"]:checked {
+  background-color: var(--first-color);
+} */
+
+@media (max-width: 540px) {
+  .form {
+    width: auto;
+  }
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .primary-button {
+    width: 100%;
+    margin: 5px 20px;
+  }
+}

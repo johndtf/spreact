@@ -1,0 +1,115 @@
+/* components/Menu.css */
+:root {
+  --background-color: #2a4152;
+  --secondbackground-color: #bcbfcf;
+  --first-color: rgb(68, 114, 196);
+  --first-alpha-color: rgba(68, 114, 196, 0.75);
+
+  --second-color: #5c8273;
+
+  --second-dark-color: rgb(70, 98, 87);
+  --second-alpha-color: rgba(92, 130, 115, 0.75);
+
+  --third-color: rgb(80, 20, 100);
+  --third-alpha-color: rgba(80, 20, 100, 0.75);
+
+  --alert-color: red;
+
+  --white-color: #fff;
+  --gray-light-color: #f3f3f3;
+  --gray-color: #ccc;
+  --gray-dark-color: #4e4e4e;
+  --black-color: #000;
+  /*  --link-color: #509ee3; */
+  --link-color: rgb(71, 241, 99);
+
+  --title-color: #333;
+  --text-dark-color: #000;
+  --text-light-color: #fff;
+  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --font: Arial, Helvetica, sans-serif;
+  --max-width: 1400px;
+  --border1: thin solid var(--second-color);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--black-color);
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+  color: var(--white-color);
+}
+
+section {
+  padding: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.card {
+  background-color: var(--secondbackground-color);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  text-align: center;
+  width: 250px;
+  margin: 10px;
+}
+
+.card i {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  /* background-color: var(--third-color); */
+  background-color: var(--gray-dark-color);
+  color: var(--white-color);
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.card a:hover {
+  background-color: var(--second-alpha-color);
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
